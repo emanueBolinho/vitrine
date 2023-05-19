@@ -1,0 +1,72 @@
+/*tela principals*/
+
+body{
+    background-color: rgba(241, 241, 241, 0.473);
+}
+#texto2{
+    text-align: center;
+    background-color: rgba(241, 167, 56, 0.507);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#opa{
+    text-align: justify;
+    font-size: 18px;
+}
+div.amarelinho{
+            background-color: rgba(223, 193, 128, 0.842);
+            height: 30px;
+}
+
+
+div.laranja{
+            background-color: rgba(236, 144, 39, 0.925);
+            height: 30px;
+        }
+#txtBusca{
+    width: 60%;
+	margin: 0 auto;
+	padding: 10px;
+	border: none;
+	margin-bottom: 10px;
+	border-radius: 50px;
+}
+#buscar{
+    padding: 10px;
+	width: 30%;
+	margin: 0 auto;
+	border-radius: 50px;
+	text-transform: uppercase;
+	font-weight: 700;
+	cursor: pointer;
+    background-color: rgba(182, 120, 26, 0.507);
+     border-color: rgba(218, 107, 16, 0.733);
+}
+
+body{
+     background-color: rgba(255, 162, 0, 0.185);
+}
+
+#cadastroR{
+    padding: 5px;
+	width: 50%;
+    height: 100%;
+	margin: 0 auto;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-weight: 700;
+	cursor: pointer;
+    background-color: rgba(182, 144, 87, 0.692);
+    border-color: rgba(252, 113, 0, 0.733);
+}
+#cadastroR2{
+    padding: 5px;
+	width: 40%;
+    height: 100%;
+	margin: 0 auto;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-weight: 700;
+	cursor: pointer;
+    background-color: rgba(182, 144, 87, 0.692);
+    border-color: rgba(252, 113, 0, 0.733);
+}

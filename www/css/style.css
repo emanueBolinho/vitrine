@@ -1,0 +1,51 @@
+/*tela de login*/
+
+body{
+    background-color: rgba(241, 167, 56, 0.507);
+    text-align: center;
+}
+
+.mm{
+    height: 15vh;
+    background-image: url(Hakim1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div.laranja{
+            background-color: rgba(255, 136, 0, 0.897);
+            height: 30px;
+}
+div.amarelinho{
+            background-color: rgba(238, 176, 41, 0.575);
+            height: 30px;
+        }
+
+#login{
+    width: 60%;
+	margin: 0 auto;
+	padding: 10px;
+	border-color: rgba(218, 107, 16, 0.733);
+	margin-bottom: 10px;
+	border-radius: 50px;
+}
+#senha{
+    width: 60%;
+	margin: 0 auto;
+	padding: 10px;
+    border-color: rgb(235, 155, 35);
+	margin-bottom: 10px;
+	border-radius: 50px;
+}
+#btn{
+    padding: 10px;
+	width: 60%;
+	margin: 0 auto;
+	border-radius: 50px;
+	text-transform: uppercase;
+	font-weight: 700;
+	cursor: pointer;
+     background-color: rgba(182, 120, 26, 0.507);
+     border-color: rgba(218, 107, 16, 0.733);
+}
+

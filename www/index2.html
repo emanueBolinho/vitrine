@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="components/loader.css">
+
+</head>
+<body>
+    <div class="laranja">
+    </div>
+     <div class="amarelinho">    
+    </div>
+
+     <br>
+      <br>        
+     <br>
+     <br>
+    
+    <div class="mm">
+        <img src="panelin.png" height="60px">
+    <h2> LOGIN </h2>
+    <div id="divLoagin">
+  <input type="email" id="login" placeholder="Email..."/> <br> <br>
+  <input type="password" id="senha" placeholder="Senha..."/> <br>
+<br> <button class="bn632-hover bn22" id="btn"> Entrar </button><br>
+<br>
+<a href="index3.html"><button class="btn btn-primary mt-3" id="btn"> Cadastre-se</button></a>
+</div>
+
+<script>
+    let btn = document.getElementById('btn');
+    let login = document.getElementById('login');
+    let senha = document.getElementById('senha');
+    
+    btn.addEventListener('click', ()=>{ 
+    let formData = new FormData();
+    formData.append('login', `${login.value}`);
+    formData.append('senha', `${senha.value}`);
+
+    fetch('https://hakim.profrodolfo.com.br/receitas.php/usuarioR.php',
+    {
+        body: formData,
+        method: 'POST',
+        mode: 'cors',
+        cache: 'default'
+    }
+        ).then(res=> {res.json().then(data=>{
+                  
+
+            if(data.erro){
+                alert('Usuário e/ou senha incorretos!');
+            }else{
+                window.location.href = "index4.html";
+            }
+        })})
+    });
+    </script>
+</body>
+</html>
